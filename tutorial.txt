@@ -1,0 +1,53 @@
+﻿Manual de Instalação Ferramenta GRSI
+
+-- Instalar o Debian 8 em um virtualizar VirtualBox
+
+
+1) Copiar os dois arquivos "script_bundle.bash" e "settings.py" para pasta /home do Debian 8.
+
+
+2) Na pasta /home, executar o seguinte comando, para dar permissão de execução: 
+
+	chmod +x script_bundle.bash
+
+
+3) Ainda na pasta /home executar o seguinte comando, para carregar o módulo de instalação.
+
+	./scrip_bundle.bash settings.py
+
+
+3) Aguarde carregar as dependências dos arquivos da ferramenta GRSI. Uma janela abrirá com os módulos a seguir:
+
+* Base
+* Base-SVN
+* Minimal
+* DBAPPWEB
+* APPWEB
+* FLUSHMIGRATE
+* ALL
+* x (Sair)
+
+
+4) Executar (selecione e tecle ENTER) o módulo "Base", responsável por criar a base do sistema. Este módulo deverá criar a pasta /opt/grsi/.
+
+
+5) Executar o módulo "Minimal", responsável por instalar as bibliotecas e requisitos mínimos da Ferramenta GRSI. 
+Observação: Este processo pode ser demorado, aguarde o retorno para o Menu Principal para continuar.
+
+ 
+6) Executar o módulo "DBAPPWEB", responsável por instalar e configurar o Banco de Dados da Ferramenta GRSI.
+
+
+7) Executar o módulo "APPWEB", responsável por instalar o APACHE e configurar a aplicação WEB.
+
+
+8) Executar o módulo "FLUSHMIGRATE", responsável por preparar o Banco de Dados e configurar a comunicação entre Apache e MySQL.
+
+
+9) Sair do menu principal (SAIR). 
+
+
+10) Abrir o navegador no HOST (máquina MAC) e inserir o endereço IP em que sua máquina virtual foi configurada para acessar a ferramenta.
+
+
+   
